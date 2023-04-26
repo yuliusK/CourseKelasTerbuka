@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Kelas Terbuka:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Kelas_Terbuka_jar</output-path>
+    <root id="archive" name="Kelas Terbuka.jar">
+      <element id="module-output" name="Kelas Terbuka" />
+    </root>
+  </artifact>
+</component>
