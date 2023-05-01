@@ -1,6 +1,8 @@
 package com.StreamByte;
 
 import java.io.*;
+import java.nio.Buffer;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -21,7 +23,7 @@ public class Main {
             System.out.println(br.readLine());
         }
 
-        //cara lain untuk read text, dibuat dengan read satupercatu (menggunakan char karena yang diread berupa int)
+        //cara lain untuk read text, dibuat dengan read satupersatu (menggunakan char karena yang diread berupa int)
         System.out.println("\nCara kedua untuk read file");
         FileInputStream fileInput = new FileInputStream("inputKetiga.txt");
         int check = fileInput.read();
@@ -35,5 +37,24 @@ public class Main {
             int buffer = in.read();
             fileOutput.write(buffer);
         }
+
+        // test read data in array
+        FileReader readFile = new FileReader("input.txt");
+        BufferedReader buffer = new BufferedReader( readFile);
+        buffer.mark(255);
+        char[] dataChar = new char[22];
+        buffer.read(dataChar, 0, 22);
+        System.out.println("\n\nRead data using array");
+        System.out.println("=> "+ Arrays.toString(dataChar));
+
+        //untuk mengulang text yang di read dari awal
+        buffer.reset();
+
+        FileWriter write = new FileWriter("testingWriter.txt");
+        BufferedWriter bw = new BufferedWriter(write);
+        String textWrite = buffer.readLine();
+        bw.newLine();
+        bw.write(textWrite, 0, textWrite.length());
+        bw.flush();
     }
 }
