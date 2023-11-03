@@ -3,6 +3,6 @@ PramoedyaAnantatoer_2001_1,2001,Pramoedya Anantatoer,Gramedia,Bumi Manusia
 purcell_2009_1,2009,purcell,wiley,calculus
 faqihza_2019_1,2019,faqihza,gramedia,belajar C++
 faqihza_2019_2,2019,faqihza,gramedia,belajar python
-faqihza_2019_3,2019,faqihza,gramedia,belajar Java
+Faqihza_1020_1,1020,Faqihza,Gramedia,Belajar Java
 Y.K_2023_1,2023,Y. K,Erlangga,belajar cyber security
-asal_2000_1,2000,asal,gramed,gatau
+Aray_2002_1,2002,Aray,Gramedia,Belajar Laba-Laba
