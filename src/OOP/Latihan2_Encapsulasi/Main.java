@@ -1,4 +1,4 @@
-package OOP.Latihan2;
+package OOP.Latihan2_Encapsulasi;
 
 class Player{
     private String name;
