@@ -25,4 +25,5 @@ public class IntelHero extends Hero{
     public void display(){
         System.out.println(this.name + " mempunyai : " +this.getHealth());
     }
+
 }
